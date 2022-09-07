@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React using CDN</title>
+    <meta name="keywords" content="React,CDN,Demo,Practice">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    
+    <!-- react 18 -->
+    <script src="https://unpkg.com/react@latest/umd/react.development.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
+    <!-- <script src="https://unpkg.com/babel-standalone@latest/babel.min.js" crossorigin="anonymous"></script> -->    
+
+    <!-- Babel -->
+    <!-- This is the script providing runtime support for compiled `async`/`await` code -->
+    <script src="https://unpkg.com/regenerator-runtime@0.13.2/runtime.js"></script>
+    <!-- This is what supports JSX compilation (and other transformations) -->
+    <script src="https://unpkg.com/@babel/standalone@7.10.3/babel.min.js"></script>
+        
+    <!-- material-ui -->
+    <script src="https://unpkg.com/@mui/material@latest/umd/material-ui.development.js" crossorigin="anonymous"></script>    
+    <!-- Fonts to support Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <!-- Icons to support Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- App Styles -->
+    <link href="./assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel" 
+        data-presets="es2017,react,stage-3" 
+        src="./app.js"></script>
+</body>
+</html>
